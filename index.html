@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="assets/css/styles.css/"/>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+
+  <body>
+    <section>
+      <div class="row" id="currencyContainer">
+        <div class="col" id= "img-box">
+          <img src="assets/img/currency.jpg" height="100%", width="100%" alt="currency" />
+        </div>
+
+        <div class="col" id="content-box">
+          <div class="form-box">
+            <h1>Currency Converter</h1>
+
+            <h3>Pesos CLP</h3>
+            <input placeholder="Enter the amount in CLP" class="form-control" />
+
+            <div>
+              <h6>Choose a currency to exchange:</h6>
+              <select class="currency-select form-select">
+                <option disabled selected>Select currency</option>
+                <option value="dolar">Dolar</option>
+                <option value="uf">UF</option>
+                <option value="euro">Euro</option>
+              </select>
+            </div>
+            <div>
+              <button class="btn btn-dark w-100 text-white fw-bold">
+                Search
+              </button>
+              <h5><span>...</span></h5>
+            </div>
+            <div>
+              <canvas id="myChart"></canvas>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
